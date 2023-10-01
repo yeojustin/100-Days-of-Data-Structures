@@ -1,0 +1,1 @@
+https://leetcode.com/problems/palindrome-number/solutions/4115457/reverse-and-check-method-easy-algo-c/
