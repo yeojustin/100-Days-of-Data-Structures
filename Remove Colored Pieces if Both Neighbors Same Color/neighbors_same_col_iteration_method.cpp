@@ -1,4 +1,4 @@
-// Beats 88.92%
+// Beats 88.92%, Medium
 // Link to explanation: https://leetcode.com/problems/remove-colored-pieces-if-both-neighbors-are-the-same-color/solutions/4119117/easy-loop-if-else-method-88-98-beginner-s-method/
 
 #include <cmath>
