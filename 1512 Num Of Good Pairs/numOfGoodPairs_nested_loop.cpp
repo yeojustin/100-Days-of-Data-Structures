@@ -1,6 +1,7 @@
 // Double iteration, compare from right to left
 // Ignore last index in vec/array since theres nothing to compare. 
 // Time : O(n^2) since we are using nested loop...
+// https://leetcode.com/problems/number-of-good-pairs/solutions/4124210/easiest-nested-for-loop-method/
 
 class Solution {
 public:
