@@ -1,0 +1,48 @@
+// 100% - O(n) for both space and time
+// Intutition and Explanation: 
+// https://leetcode.com/problems/valid-parentheses/solutions/4133202/true-100-sol-map-and-stack-iteration-slightly-overkill-i-know-but-it-keeps-runtime-low/
+
+#include <iostream>
+#include <stack>
+#include <unordered_map>
+using namespace std;
+
+class Solution 
+{
+public:
+    bool isValid(string s) 
+    {
+        stack<char> st;
+        unordered_map<char, char> mp = 
+        {
+            {')', '('},
+            {']', '['},
+            {'}', '{'}
+        };
+
+        for (char c : s) 
+        {
+            // Check if the current character is a closing parenthesis
+            if (mp.find(c) != mp.end())
+            {
+                // Check if the stack is empty or the top element of the stack
+                // does not match the corresponding opening parenthesis
+                if (st.empty() || st.top() != mp[c]) 
+                {
+                    return false; // Mismatched closing parenthesis
+                }
+
+                // If there is a match, remove the top element from the stack
+                st.pop();
+            } 
+            else 
+            {
+                // Current character is an opening parenthesis, push it onto the stack
+                st.push(c);
+            }
+        }
+
+        // If the stack is empty, the string is valid; otherwise, it's invalid
+        return st.empty();
+    }
+};
