@@ -1,4 +1,5 @@
-# Essentially my leetcode repo...and its failures...
+# Essentially my leetcode repo...
+## I think i spent way too much time on this and I need to get back on track ... :(
 
 | Problem # | Date       | Question                                   | Topics                 | Difficulty | Done? |
 | --------- | ---------- | ----------------------------------------- | ---------------------- | ---------- | ----- |
